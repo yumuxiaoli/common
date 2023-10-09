@@ -3,8 +3,8 @@ package common
 import (
 	"strconv"
 
-	"github.com/micro/go-micro/v2/config"
-	"github.com/micro/go-plugins/config/source/consul/v2"
+	"github.com/go-micro/plugins/v4/config/source/consul"
+	"go-micro.dev/v4/config"
 )
 
 func GetConsulConfig(host string, port int64, prefix string) (config.Config, error) {
